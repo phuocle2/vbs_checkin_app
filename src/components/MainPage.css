@@ -1,0 +1,37 @@
+header, main {
+    padding: 10px;
+}
+
+table, td {
+    border: 0.1px solid;
+    border-spacing: 0px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    flex-direction: column;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.Title{
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+.ListContent {
+    align-content: center;
+}
+
+.ListContent .FieldTitle{
+    text-align: left;
+    font-weight: bold;
+}
+
+.btn{
+    float: left;
+    padding: 0px 10px 0px 10px;
+}

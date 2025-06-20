@@ -30,7 +30,7 @@ import {
   Route,
 } from 'react-router-dom';
 
-// import MainPage from './components/MainPage';
+import MainPage from './components/MainPage';
 import Greeting from './components/Greeting';
 
 // CSS Style
@@ -41,7 +41,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          {/* <Route path='/profile' element={<MainPage />} /> */}
+          <Route path='/profile' element={<MainPage />} />
           <Route path='/greeting' element={<Greeting />} />
         </Routes>
       </Router>

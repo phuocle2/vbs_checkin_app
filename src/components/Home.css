@@ -1,0 +1,136 @@
+
+.title-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* if the space in the container becomes too narrow to maintain the flex basis, items will wrap onto a new row. */
+    flex-wrap: wrap;
+    padding: 20px 0px 20px 0px
+}
+
+.vbs-title {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vbs-title img {
+    width: calc(100%/2);
+    filter: drop-shadow(3px 3px 5px #000);
+}
+
+.vbs-year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+}
+
+.vbs-year img {
+    width: 11%;
+    filter: drop-shadow(1px 1px 5px #000);
+}
+
+.vbs-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 20%;
+}
+
+.vbs-logo img {
+    width: 100%;
+    filter: drop-shadow(3px 3px 5px #000);
+}
+
+.info-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.info-card .center-card {
+    font-size: large;
+    width: calc(100%/2);
+    background-color: white;
+    
+    color: #d21900;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.7vw;
+
+    border: 10px solid rgb(255, 255, 255);
+    box-shadow: -2px 2px 5px 1px rgb(107, 107, 107) inset,
+        0 0 50px 3px rgba(240, 172, 0, 0.561) inset;
+
+    filter: drop-shadow(3px 3px 3px #000);
+}
+
+.info-time {
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.time-card {
+    padding: 5px;
+    border: 1px solid #d21900;
+    margin: 0.1rem;
+}
+
+.info-time .time {
+    text-align: center;
+}
+
+.info-note,
+.info-activities,
+.info-location
+{
+    text-align: center;
+    padding: 5px;
+}
+
+.info-activities {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .vbs-title img {
+        width: calc(100%/1);
+    }
+
+    .vbs-year img {
+        width: calc(100%/4);
+    }
+
+    .vbs-logo img {
+        width: 200%;
+    }
+
+    .left-blank-card {
+        display: none;
+    }
+
+    .right-blank-card {
+        display: none;
+    }
+
+    .info-card .center-card {
+        width: 100%;
+        font-size: 1.7vmax;
+    }
+
+}

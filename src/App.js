@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import {
@@ -7,24 +6,27 @@ import {
   Route,
 } from 'react-router-dom';
 
-import MainPage from './components/MainPage';
+import Home from './components/Home'
+import Profile from './components/Profile';
 import Greeting from './components/Greeting';
 
 // CSS Style
 import './App.css';
 
 function App() {
+  
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route path='/profile' element={<MainPage />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/profile' element={<Profile />} />
           <Route path='/greeting' element={<Greeting />} />
         </Routes>
       </Router>
-      
     </div>
   );
+
 }
 
 export default App;

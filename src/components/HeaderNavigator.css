@@ -1,0 +1,51 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+}
+
+.navigation nav {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    margin: 2%;
+    border-radius: 30px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: rgb(10, 0, 118);
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+nav ul a::after {
+    content: '';
+    position: absolute;
+    width: auto;
+    height: 2px;
+    background: rgb(110, 0, 0);
+    bottom: 0;
+    left: 50%;
+    transition: all 0.3 ease;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+nav ul a:hover {
+    color: rgb(118, 0, 0);
+}

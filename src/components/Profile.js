@@ -4,6 +4,9 @@ import axios from 'axios';
 
 import AuthContext from './store/auth';
 
+import Header from './HeaderNavigator'
+import Footer from './Footer'
+
 // CSS style
 import './Profile.css';
 
@@ -69,6 +72,8 @@ const Profile = (props) => {
 
     return (
         <React.Fragment>
+            <Header />
+
             <header>
                 <div className='title'>
                     <h1>Student Profile</h1>
@@ -124,6 +129,8 @@ const Profile = (props) => {
 
                 </div>
             </main>
+
+            <Footer />
         </React.Fragment>
 
     );

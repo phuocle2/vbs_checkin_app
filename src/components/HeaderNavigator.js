@@ -10,9 +10,9 @@ const HeaderNavigator = (props) => {
                 <nav>
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/">Profile</a></li>
-                        <li><a href="/profile">Profile</a></li>
-                        <li><a href="/greeting">Greeting</a></li>
+                        {/* <li><a href="/">Profile</a></li> */}
+                        {/* <li><a href="/profile">Profile</a></li> */}
+                        {/* <li><a href="/greeting">Greeting</a></li> */}
                     </ul>
                 </nav>
             </div>

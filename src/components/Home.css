@@ -1,75 +1,63 @@
-
 .title-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* if the space in the container becomes too narrow to maintain the flex basis, items will wrap onto a new row. */
-    flex-wrap: wrap;
-    padding: 20px 0px 20px 0px
+    width: 100%;
 }
 
-.vbs-title {
-    margin: 10px;
+/* .title-card .vbs-title,
+.title-card .vbs-year,
+.title-card .vbs-logo */
+
+.title-card :where(.vbs-title, .vbs-year, .vbs-logo) {
+    /* align-items: center; */
+    /* width: calc(100%/2); */
     display: flex;
+    align-content: center;
     justify-content: center;
-    align-items: center;
+    padding: 10px;
+    filter: drop-shadow(3px 2px 2px #00073f);
 }
 
 .vbs-title img {
-    width: calc(100%/2);
-    filter: drop-shadow(3px 3px 5px #000);
-}
-
-.vbs-year {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    width: 100%;
+    width: calc(100%/2.5);
 }
 
 .vbs-year img {
-    width: 11%;
-    filter: drop-shadow(1px 1px 5px #000);
-}
-
-.vbs-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    width: 20%;
+    width: 13%;
 }
 
 .vbs-logo img {
-    width: 100%;
-    filter: drop-shadow(3px 3px 5px #000);
+    width: calc(100%/4);
 }
 
 .info-card {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
-.info-card .center-card {
+.center-card {
     font-size: large;
-    width: calc(100%/2);
+    /* width: calc(100%/1.3); */
     background-color: white;
     
     color: #d21900;
     letter-spacing: 2px;
     border-radius: 20px;
     padding: 10px;
-    font-size: 1.7vw;
+    /* font-size: 1.6vw; */
 
-    border: 10px solid rgb(255, 255, 255);
+    border: 7px solid rgb(255, 255, 255);
     box-shadow: -2px 2px 5px 1px rgb(107, 107, 107) inset,
         0 0 50px 3px rgba(240, 172, 0, 0.561) inset;
 
     filter: drop-shadow(3px 3px 3px #000);
+}
+
+.divided-line {
+    /* padding: 5px; */
+    height: 70px;
+    border: 1px solid #d21900;
+    margin: 0 10px 0 10px;
 }
 
 .info-time {
@@ -82,16 +70,21 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     line-height: 1.5;
+    /* font-size: 1.5vw; */
 }
 
-.time-card {
-    padding: 5px;
-    border: 1px solid #d21900;
-    margin: 0.1rem;
-}
+/* .time-card { */
+    /* padding: 0 15px 0 15px; */
+    /* border: 1px solid #d21900; */
+    /* margin: 0.1rem; */
+/* } */
 
-.info-time .time {
+.time {
     text-align: center;
+}
+
+.info-note {
+    margin-top: 10px;
 }
 
 .info-note,
@@ -109,7 +102,7 @@
 
 @media only screen and (max-width: 600px) {
     .vbs-title img {
-        width: calc(100%/1);
+        width: calc(100%/1.2);
     }
 
     .vbs-year img {
@@ -117,20 +110,17 @@
     }
 
     .vbs-logo img {
-        width: 200%;
+        width: calc(100%/2);
     }
 
-    .left-blank-card {
-        display: none;
-    }
-
-    .right-blank-card {
-        display: none;
-    }
-
-    .info-card .center-card {
+    .center-card {
         width: 100%;
-        font-size: 1.7vmax;
+        font-size: 3.3vw;
     }
 
+    .divided-line {
+        /* display: none; */
+        height: 40px;
+    }
+    
 }

@@ -74,61 +74,68 @@ const Profile = (props) => {
         <React.Fragment>
             <Header />
 
-            <header>
-                <div className='title'>
-                    <h1>Student Profile</h1>
-                </div>
-            </header>
-            
-            <main>
-                <div className='profile-card'>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td className='field-title'>Name</td>
-                                <td>{data.name}</td>
-                            </tr>
-                            <tr>
-                                <td className='field-title'>Age</td>
-                                <td>{data.age}</td>
-                            </tr>
-                            <tr>
-                                <td className='field-title'>Organization</td>
-                                <td>{data.organization}</td>
-                            </tr>
-                            <tr>
-                                <td className='field-title'>Check-in</td>
-                                <td >
-                                    {/* Submit button */}
-                                    <div className='btn'>
-                                        {/* <button type="submit" name="btnDay1" disabled={validateBtn(data.absence1)}>Day 1</button> */}
-                                        <button
-                                            type="submit"
-                                            name="btnDay1"
-                                            disabled={data.day1==='1'}
-                                            onClick={handleSubmit}
-                                            >
-                                            Day 1
-                                        </button>
-                                    </div>
-                                    <div className='btn'>
-                                        {/* <button type="submit" name="btnDay2" disabled={validateBtn(data.absence2)}>Day 2</button> */}
-                                        <button
-                                            type="submit"
-                                            name="btnDay2"
-                                            disabled={data.day2==='1'}
-                                            onClick={handleSubmit}
-                                        >
-                                            Day 2
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div className='wrapper'>
+                <div className='card'>
 
+                    <header>
+                        <div className='title'>
+                            <h1>Student Profile</h1>
+                        </div>
+                    </header>
+                    
+                    <main>
+                        <div className='profile-card'>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td className='field-title'>Name</td>
+                                        <td>{data.name}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='field-title'>Age</td>
+                                        <td>{data.age}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='field-title'>Organization</td>
+                                        <td>{data.organization}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='field-title'>Check-in</td>
+                                        <td >
+                                            {/* Submit button */}
+                                            <div className='btn-group'>
+                                                <div className='btn'>
+                                                    {/* <button type="submit" name="btnDay1" disabled={validateBtn(data.absence1)}>Day 1</button> */}
+                                                    <button
+                                                        type="submit"
+                                                        name="btnDay1"
+                                                        disabled={data.day1==='1'}
+                                                        onClick={handleSubmit}
+                                                        >
+                                                        Day 1
+                                                    </button>
+                                                </div>
+
+                                                <div className='btn'>
+                                                    {/* <button type="submit" name="btnDay2" disabled={validateBtn(data.absence2)}>Day 2</button> */}
+                                                    <button
+                                                        type="submit"
+                                                        name="btnDay2"
+                                                        disabled={data.day2==='1'}
+                                                        onClick={handleSubmit}
+                                                    >
+                                                        Day 2
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </main>
                 </div>
-            </main>
+            </div>
 
             <Footer />
         </React.Fragment>

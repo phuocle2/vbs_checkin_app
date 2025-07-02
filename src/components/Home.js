@@ -13,50 +13,59 @@ const Home = (props) => {
         <React.Fragment>
             <Header />
 
-            <div>
-                <div className='title-card'>
-                    <div className='vbs-title'>
-                        <img src='assets/images/VBS.png' alt="/"/>
-                    </div>
-                    <div className='vbs-year'>
-                        <img src='assets/images/2025.png' alt="/"/>
-                    </div>
-                    <div className='vbs-logo'>
-                        <img src='assets/images/true-north-logo-LoRes-RGB.png' alt="/"/>
+            <div className='title-card'>
+                <div className='vbs-title'>
+                    <img src='assets/images/VBS.png' alt="/"/>
+                </div>
+                <div className='vbs-year'>
+                    <img src='assets/images/2025.png' alt="/"/>
+                </div>
+                <div className='vbs-logo'>
+                    <img src='assets/images/true-north-logo-LoRes-RGB.png' alt="/"/>
+                </div>
+            </div>
+
+            <div className='info-card'>
+                <div className='date-time-box'>
+                    <span className='date-time'>
+                        <strong>DATE & TIME</strong>
+                    </span>
+
+                    <div className='date-time-info'>
+                        <p>
+                            <strong>
+                                Friday, July 18th
+                            </strong>
+                            <br/>
+                            <em>6PM - 9PM</em>
+                        </p>
+
+                        <p>
+                            <strong>
+                                Saturday, July 19th
+                            </strong>
+                            <br/>
+                            <em>10AM - 4PM</em>
+                        </p>
                     </div>
                 </div>
+                
+                <div className='note-box'>
+                    <em>* Lunch & Dinner will be served!</em>
+                </div>
 
-                <div className='info-card'>
-                    {/* <div className='left-blank-card'></div> */}
-                    <div className='center-card'>
-                        <div className='info-time'>
-                            <div className='time-card'>
-                                <div className='date'>
-                                    <span>Friday, July 18th</span>
-                                </div>
-                                <div className='time'>6PM - 9PM</div>
-                            </div>
-                            <div className='divided-line'></div>
-                            <div className='time-card'>
-                                <div className='date'>Saturday, July 19th</div>
-                                <div className='time'>10AM - 4PM</div>
-                            </div>
-                        </div>
+                <div className='location-box'>
+                    <span className='location'>
+                        <strong>LOCATION</strong>
+                    </span>
 
-                        <div className='info-note'>
-                            Lunch & Dinner will be served!
-                        </div>
-
-                        <div className='info-activities'>
-                            WORSHIP | BIBLE | FELLOWSHIP
-                        </div>
-
-                        <div className='info-location'>
-                            <div>Location</div>
-                            3134 Frick Road, Houston, TX 77038
-                        </div>
+                    <div className='date-time-info'>
+                        <p>
+                            <strong>
+                                3134 Frick Road, Houston, TX 77038
+                            </strong>
+                        </p>
                     </div>
-                    {/* <div className='right-blank-card'></div> */}
                 </div>
             </div>
 

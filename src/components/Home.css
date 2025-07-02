@@ -17,50 +17,71 @@
 }
 
 .vbs-title img {
-    width: calc(100%/2.5);
+    width: calc(100%/3.5);
 }
 
 .vbs-year img {
-    width: 13%;
+    width: 8%;
 }
 
 .vbs-logo img {
-    width: calc(100%/4);
+    width: calc(100%/5.9);
 }
 
 .info-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     padding: 10px;
+    background-color: white;
+    font-family: sans-serif;
 }
 
-.center-card {
+.date-time,
+.location
+{
+    font-weight: 400;
+    font-size: 30px;
+    color: #29369a;
+    margin: 0 0 50px 0;
+    width: 100%;
+}
+
+.date-time-info p {
+    line-height: 1.5rem;
+    margin-top: 5px;
+}
+
+.note-box {
+    font-size: 18px;
+    padding: 10px 0 10px 0;
+}
+
+/* .date-time-info p { */
+    /* margin: 5px 0 0 0; */
+/* } */
+
+/* .center-card {
     font-size: large;
-    /* width: calc(100%/1.3); */
     background-color: white;
     
     color: #d21900;
     letter-spacing: 2px;
     border-radius: 20px;
     padding: 10px;
-    /* font-size: 1.6vw; */
 
     border: 7px solid rgb(255, 255, 255);
     box-shadow: -2px 2px 5px 1px rgb(107, 107, 107) inset,
         0 0 50px 3px rgba(240, 172, 0, 0.561) inset;
 
     filter: drop-shadow(3px 3px 3px #000);
-}
+} */
 
-.divided-line {
-    /* padding: 5px; */
+/* .divided-line {
     height: 70px;
     border: 1px solid #d21900;
     margin: 0 10px 0 10px;
-}
+} */
 
-.info-time {
+/* .info-time {
     width: auto;
     display: flex;
     justify-content: space-evenly;
@@ -70,8 +91,7 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     line-height: 1.5;
-    /* font-size: 1.5vw; */
-}
+} */
 
 /* .time-card { */
     /* padding: 0 15px 0 15px; */
@@ -79,7 +99,7 @@
     /* margin: 0.1rem; */
 /* } */
 
-.time {
+/* .time {
     text-align: center;
 }
 
@@ -93,12 +113,12 @@
 {
     text-align: center;
     padding: 5px;
-}
+} */
 
-.info-activities {
+/* .info-activities {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-}
+} */
 
 @media only screen and (max-width: 600px) {
     .vbs-title img {
@@ -112,15 +132,19 @@
     .vbs-logo img {
         width: calc(100%/2);
     }
-
-    .center-card {
-        width: 100%;
-        font-size: 3.3vw;
-    }
-
-    .divided-line {
-        /* display: none; */
-        height: 40px;
-    }
     
+}
+
+@media only screen and (max-width: 1200px) {
+    .vbs-title img {
+        width: calc(100%/2.5);
+    }
+
+    .vbs-year img {
+        width: 13%;
+    }
+
+    .vbs-logo img {
+        width: calc(100%/4);
+    }
 }

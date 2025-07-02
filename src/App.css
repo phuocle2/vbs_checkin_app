@@ -11,10 +11,6 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: #021023;
   background-size: cover;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  color: #fff;
 
   background-image: url(./components/store/pics/2025VBS_backdrop.png);
   background-size: 100vw 100vh;

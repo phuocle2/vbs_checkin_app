@@ -23,8 +23,19 @@ body {
     background-color: #021023;
     background-image: url(./components/store/pics/2025VBS_backdrop_portrait.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: 100vw 100vh;
+    /* background-attachment: fixed; */
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  body {
+    background-color: #021023;
+    background-image: url(./components/store/pics/2025VBS_backdrop_portrait.png);
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    /* background-size: 100vw 100vh; */
     background-attachment: fixed;
   }
 }

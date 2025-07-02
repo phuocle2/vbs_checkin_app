@@ -2,9 +2,6 @@
     width: 100%;
 }
 
-/* .title-card .vbs-title,
-.title-card .vbs-year,
-.title-card .vbs-logo */
 
 .title-card :where(.vbs-title, .vbs-year, .vbs-logo) {
     /* align-items: center; */
@@ -22,6 +19,10 @@
 
 .vbs-year img {
     width: 8%;
+}
+
+.vbs-logo {
+    margin-bottom: 20px;
 }
 
 .vbs-logo img {
@@ -122,11 +123,11 @@
 
 @media only screen and (max-width: 600px) {
     .vbs-title img {
-        width: calc(100%/1.2);
+        width: calc(100%/1);
     }
 
     .vbs-year img {
-        width: calc(100%/4);
+        width: calc(100%/3.3);
     }
 
     .vbs-logo img {
@@ -135,7 +136,7 @@
     
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
     .vbs-title img {
         width: calc(100%/2.5);
     }

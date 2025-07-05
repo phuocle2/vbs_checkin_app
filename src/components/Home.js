@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useContext, useCallback } from 'react';
-import axios from 'axios';
+import React from 'react';
+// import axios from 'axios';
 
 import Header from './HeaderNavigator'
 import Footer from './Footer'

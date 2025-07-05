@@ -6,9 +6,10 @@ import {
   Route,
 } from 'react-router-dom';
 
-import Home from './components/Home'
+import Home from './components/Home';
 import Profile from './components/Profile';
-import Greeting from './components/Greeting';
+import TableList from './components/TableList';
+// import Greeting from './components/Greeting';
 
 // CSS Style
 import './App.css';
@@ -20,7 +21,8 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/profile' element={<Profile />} />
+          <Route path='/checkin' element={<Profile />} />
+          <Route path='/oversea' element={<TableList />} />
           {/* <Route path='/greeting' element={<Greeting />} /> */}
         </Routes>
       </Router>

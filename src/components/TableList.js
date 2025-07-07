@@ -10,7 +10,7 @@ import 'ag-grid-community/styles/ag-theme-quartz.css';
 
 import AuthContext from './store/auth';
 
-import Header from './HeaderNavigator'
+import Header from './HeaderNavigatorAdmin'
 import Footer from './Footer'
 
 // CSS style

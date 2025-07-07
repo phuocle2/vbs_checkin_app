@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import AuthContext from './store/auth';
 
-import Header from './HeaderNavigatorAdmin'
+import Header from './HeaderNavigator'
 import Footer from './Footer'
 
 // CSS style
@@ -166,14 +166,14 @@ const Profile = (props) => {
 
     return (
         <React.Fragment>
-            <Header />
+            {/* <Header /> */}
 
             <div className='wrapper'>
                 <div className='title-card'>
                     <h1>Student Profile</h1>
                 </div>
 
-                <div className='search-card'>
+                {/* <div className='search-card'>
                     <div className='form-group'>
                         <input className='first-name' id='fName' type='text' placeholder='First Name' onChange={fnameHandler} required></input>
                         <label className='form-label'>First Name</label>
@@ -185,7 +185,7 @@ const Profile = (props) => {
                     <div className='form-group'>
                         <button id='submit' onClick={handleSearch}>Search</button>
                     </div>
-                </div>
+                </div> */}
                 <div className='output-box' id="output-box"></div>
 
                 <div className='glass-card'>

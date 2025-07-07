@@ -147,7 +147,6 @@ const Profile = (props) => {
                 console.log(res)
                 // setStatus(res.status)
                 setData(res.data.data)
-
                 setRowPos(res.data.rowPos)
                 setSession1Pos(res.data.session1Pos)
                 setSession2Pos(res.data.session2Pos)
@@ -162,6 +161,16 @@ const Profile = (props) => {
         lnameInput.value = '';
         // window.location.reload();
 
+    };
+
+    const validateData = (d) => {
+        console.log(d)
+        if (!d) {
+            return ''
+        }
+        else {
+            return d
+        }
     };
 
     return (
@@ -196,9 +205,9 @@ const Profile = (props) => {
                                     <td className='field-title'>Name</td>
                                     <td>
                                         {/* {data.FirstName + ' ' + data.LastName} */}
-                                        <span>{data['First Name']}</span>
+                                        <span>{validateData(data['First Name'])}</span>
                                         <span> </span>
-                                        <span>{data['Last Name']}</span>
+                                        <span>{validateData(data['Last Name'])}</span>
                                     </td>
                                 </tr>
                                 <tr>

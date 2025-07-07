@@ -11,7 +11,8 @@ const HeaderNavigator = (props) => {
                     <ul>
                         <li><a href="/">Home</a></li>
                         {/* <li><a href="/">Profile</a></li> */}
-                        {/* <li><a href="/checkin">Check-in</a></li> */}
+                        <li><a href="/admin/profile">Profile</a></li>
+                        <li><a href="/admin/oversea">Management</a></li>
                         {/* <li><a href="/greeting">Greeting</a></li> */}
                     </ul>
                 </nav>

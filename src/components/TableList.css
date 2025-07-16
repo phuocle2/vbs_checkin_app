@@ -1,0 +1,13 @@
+/* style = {{height: 700}} */
+
+.ag-theme-quartz {
+    /* width: fit-auto; */
+    /* height: 700px; */
+}
+
+@media only screen and (max-width: 600px) {
+    .ag-theme-quartz {
+        width: 1200px;
+    }
+
+}

@@ -10,10 +10,11 @@ import 'ag-grid-community/styles/ag-theme-quartz.css';
 
 import AuthContext from './store/auth';
 
-import Header from './HeaderNavigatorAdmin'
-import Footer from './Footer'
+import Header from './HeaderNavigatorAdmin';
+import Footer from './Footer';
 
 // CSS style
+import './TableList.css';
 
 // This section is for Ag Grid React setup
 ModuleRegistry.registerModules([ AllCommunityModule ]);
@@ -34,11 +35,11 @@ const TableList = (props) => {
         },
         {
             field: 'First Name',
-            // suppressSizeToFit: true,
+            suppressSizeToFit: true,
         },
         {
             field: 'Last Name',
-            // suppressSizeToFit: true,
+            suppressSizeToFit: true,
         },
         {field: 'Birthday'},
         {field: 'Gender'},
@@ -87,14 +88,14 @@ const TableList = (props) => {
             <Header />
 
             <div className='contain-card'>
-                <div className='ag-theme-quartz' style = {{height: 500}}>
+                <div className='ag-theme-quartz' style = {{height: 600}}>
                     <AgGridReact 
                         rowData={rowData} 
                         columnDefs={colDefs} 
                         defaultColDef={defaultColDef}
                         pagination={true}
-                        paginationPageSize={10}
-                        paginationPageSizeSelector={[10, 15, 20, 25]}
+                        paginationPageSize={30}
+                        paginationPageSizeSelector={[10, 20, 30]}
                     />
                 </div>
             </div>

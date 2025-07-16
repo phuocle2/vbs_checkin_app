@@ -23,8 +23,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/checkin' element={<CheckIn />} />
-
-          <Route path='/admin' element={<Home />} />
           <Route path='/admin/profile' element={<Profile />} />
           <Route path='/admin/oversea' element={<TableList />} />
           {/* <Route path='/greeting' element={<Greeting />} /> */}

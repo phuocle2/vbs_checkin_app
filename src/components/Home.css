@@ -56,6 +56,35 @@
     padding: 10px 0 10px 0;
 }
 
+.schedule {
+    background-color: rgb(226, 255, 253);
+    text-align: center;
+
+}
+
+.schedule h2 {
+    color: #29369a;
+    /* margin: 10px; */
+    padding: 20px;
+    font-size: 30px;
+}
+
+.schedule-friday {
+    height: 400px;
+    background-image: url(./store/pics/Schedule_Friday.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.schedule-saturday {
+    height: 770px;
+    background-image: url(./store/pics/Schedule_Sat.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 /* .date-time-info p { */
     /* margin: 5px 0 0 0; */
 /* } */
@@ -133,7 +162,14 @@
     .vbs-logo img {
         width: calc(100%/2);
     }
-    
+
+    .schedule-friday {
+        height: 180px;
+    }
+
+    .schedule-saturday {
+        height: 350px;
+    }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1200px) {

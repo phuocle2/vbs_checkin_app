@@ -1,8 +1,8 @@
 import React from 'react';
 // import axios from 'axios';
 
-import Header from './HeaderNavigator'
-import Footer from './Footer'
+import Header from './HeaderNavigator';
+import Footer from './Footer';
 
 // CSS style
 import './Home.css';
@@ -69,6 +69,15 @@ const Home = (props) => {
                 </div>
             </div>
 
+            <div className='schedule' >
+                <h2>SCHEDULE</h2>
+                <div className='schedule-friday'>
+                </div>
+                <br/>
+                <div className='schedule-saturday'>
+                </div>
+                <br/>
+            </div>
             <Footer />
         </React.Fragment>
 

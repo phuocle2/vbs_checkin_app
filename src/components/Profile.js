@@ -4,8 +4,8 @@ import axios from 'axios';
 
 import AuthContext from './store/auth';
 
-import Header from './HeaderNavigatorAdmin'
-import Footer from './Footer'
+import Header from './HeaderNavigatorAdmin';
+import Footer from './Footer';
 
 // CSS style
 import './Profile.css';

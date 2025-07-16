@@ -4,8 +4,8 @@ import axios from 'axios';
 
 import AuthContext from './store/auth';
 
-import Header from './HeaderNavigator'
-import Footer from './Footer'
+// import Header from './HeaderNavigator'
+import Footer from './Footer';
 
 // CSS style
 import './Profile.css';
@@ -15,8 +15,8 @@ const Profile = (props) => {
     const useCtx = useContext(AuthContext);
     const [data, setData] = useState([]);
 
-    const [fname, setFName] = useState([]);
-    const [lname, setLName] = useState([]);
+    // const [fname, setFName] = useState([]);
+    // const [lname, setLName] = useState([]);
 
     const [rowPos, setRowPos] = useState([]);
     // const [colPos, setColPos] = useState([]);
@@ -99,6 +99,7 @@ const Profile = (props) => {
         
     };
 
+    /*
     const fnameHandler = (event) => {
         setFName(event.target.value.trim());
     }
@@ -106,8 +107,10 @@ const Profile = (props) => {
     const lnameHandler = (event) => {
         setLName(event.target.value.trim());
     }
-
+    */
+    
     // Handle search
+    /* 
     const handleSearch = (event) => {
         // Prevent form submission
         // event.preventDefault();
@@ -163,6 +166,7 @@ const Profile = (props) => {
         // window.location.reload();
 
     };
+     */
 
     return (
         <React.Fragment>

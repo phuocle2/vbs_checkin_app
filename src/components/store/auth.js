@@ -10,9 +10,9 @@ const AuthContext = React.createContext({
     // profile: 'http://localhost:5001/checkin',
     // update: 'http://localhost:5001/update',
     // list: 'http://localhost:5001/list',
-    greeting: 'http://server.pspace.site:5001/greeting',
-    profile: 'http://server.pspace.site:5001/checkin',
-    update: 'http://server.pspace.site:5001/update',
-    list: 'http://server.pspace.site:5001/list',
+    greeting: 'https://server.pspace.site:5001/greeting',
+    profile: 'https://server.pspace.site:5001/checkin',
+    update: 'https://server.pspace.site:5001/update',
+    list: 'https://server.pspace.site:5001/list',
 })
 export default AuthContext;
